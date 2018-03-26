@@ -42,4 +42,4 @@ df.to_csv(r"C:\Users\ashmaro1\Documents\_Projects\NSW_Health\emotion\Ratings_War
 VAD = pd.Series(df['vad'].values,index=df.Word).to_dict()
 import yaml
 with open(r"C:\Users\ashmaro1\Documents\_Projects\NSW_Health\emotion\vad.yml", 'w') as yaml_file:
-    yaml.safe_dump(VAD, yaml_file, default_flow_style=False)
+    yaml.safe_dump(VAD, yaml_file)
